@@ -13,7 +13,7 @@ public class ComparisonOperator {
         System.out.println("x > y " + (x > y));
         System.out.println("x < y " + (x < y));
         System.out.println("x <= y " + (x <= y));
-//        System.out.println("x >= y " + (x >= y));
+        System.out.println("x >= y " + (x >= y));
 
         char char1 = 'A';
         char char2 = 'B';
