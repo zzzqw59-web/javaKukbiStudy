@@ -33,7 +33,7 @@ public class SwitchExample2 {
             }
             System.out.printf("학점 = %c" , grade);
         } else {
-            System.out.println("입력된 숫자는 0~100의 범위를 벗어났습니다.");
+//            System.out.println("입력된 숫자는 0~100의 범위를 벗어났습니다.");
         }
     }
 }
