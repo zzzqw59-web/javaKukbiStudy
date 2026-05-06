@@ -1,3 +1,5 @@
+package final1;
+
 public class FinalFieldMain {
     static void main(String[] args) {
         System.out.println("생성자 초기화");

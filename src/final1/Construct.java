@@ -1,3 +1,5 @@
+package final1;
+
 public class Construct {
     // 수학상수
     public static final double PI = 3.14;

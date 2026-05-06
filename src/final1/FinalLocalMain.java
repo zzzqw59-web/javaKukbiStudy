@@ -1,3 +1,5 @@
+package final1;
+
 public class FinalLocalMain {
     static void main(String[] args) {
         // final 지역변수1
