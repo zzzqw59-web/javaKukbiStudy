@@ -14,8 +14,5 @@ public class Example2_1 {
 
         System.out.println("달걀 " + egg + "개를 " + box + "개씩 담을 수 있는 상자의 수는 " + boxCount + "개입니다.");
 
-
-
-
     }
 }
