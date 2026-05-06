@@ -13,26 +13,34 @@ public class SwitchStringExample {
         System.out.println("4. 삭제");
         System.out.println("7. 종료");
         System.out.print("메뉴 번호를 입력하세요.");
+
         int count = input.nextInt();
+        String menu;
 
         switch (count) {
             case 1:
-                System.out.println("입력 메뉴입니다.");
+                menu = "입력";
                 break;
             case 2:
-                System.out.println("수정 메뉴입니다.");
+                menu = "수정";
                 break;
             case 3:
-                System.out.println("조회 메뉴입니다.");
+                menu = "조회";
                 break;
             case 4:
-                System.out.println("삭제 메뉴입니다.");
+                menu = "삭제";
                 break;
             case 7:
-                System.out.println("종료 메뉴입니다.");
+                menu = "종료";
                 break;
             default:
-                System.out.println("해당 메뉴는 존재하지 않습니다.");
+                menu = null;
+        }
+
+        if (menu == null) {
+            System.out.println("해당 번호는 존재하지 않습니다.");
+        } else {
+            System.out.println(menu + " 메뉴입니다.");
         }
         input.close();
 
