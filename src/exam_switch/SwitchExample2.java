@@ -11,7 +11,7 @@ public class SwitchExample2 {
         System.out.println("점수는 0~100 사이로 입력해주세요.");
         score = input.nextInt();
 
-        System.out.printf("점수 = %d ", score);
+        System.out.printf("점수 = %d", score);
 
         if (score <= 100 && score >= 0) {
             switch (score / 10) {
@@ -31,9 +31,9 @@ public class SwitchExample2 {
                 default:
                     grade = 'F';
             }
-            System.out.printf("학점 = %c" , grade);
+            System.out.printf(", 학점 = %c" , grade);
         } else {
-            System.out.println("입력된 숫자는 0~100의 범위를 벗어났습니다.");
+            System.out.println(", 입력된 숫자는 0~100의 범위를 벗어났습니다.");
         }
     }
 }

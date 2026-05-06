@@ -11,25 +11,32 @@ public class SwitchCase {
         System.out.print("각 층 정보를 제공하고자 합니다. 1~5층 수를 입력해주세요.");
 
         int grade = input.nextInt();
+        String info;
 
         switch (grade) {
             case 1:
-                System.out.println("1층은 약국입니다.");
+                info = "약국";
                 break;
             case 2:
-                System.out.println("2층은 정형외과입니다.");
+                info = "정형외과";
                 break;
             case 3:
-                System.out.println("3층은 피부과입니다.");
+                info = "피부과";
                 break;
             case 4:
-                System.out.println("4층은 치과입니다.");
+                info = "치과";
                 break;
             case 5:
-                System.out.println("5층은 헬스클럽입니다.");
+                info = "헬스클럽";
                 break;
             default:
-                System.out.println("해당 층은 존재하지 않습니다.");
+                info = null;
+        }
+
+        if (info == null) {
+            System.out.println("해당 층은 존재하지 않습니다.");
+        } else {
+            System.out.println(grade + "층은 " + info + "입니다.");
         }
     }
 }

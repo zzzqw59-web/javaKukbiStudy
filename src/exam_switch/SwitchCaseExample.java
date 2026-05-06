@@ -15,20 +15,26 @@ public class SwitchCaseExample {
 
         System.out.println("당신은 관리자인가요? 회원인가요? 비회원인가요?");
 
-        String grade = input.nextLine();
+        String grade = input.nextLine().trim();
 
         switch (grade) {
             case "관리자":
-                System.out.println("회원관리, 게시글 관리, 게시글 조회, 댓글작성 가능");
+                System.out.println("회원관리, 게시글 관리, 게시글 조회, 댓글작성");
                 break;
             case "회원":
-                System.out.println("게시글 작성, 게시글 조회, 댓글 작성 가능");
+                System.out.println("게시글 작성, 게시글 조회, 댓글 작성");
                 break;
             case "비회원":
-                System.out.println("게시글 조회 가능");
+                System.out.println("게시글 조회");
                 break;
             default:
-                System.out.println("해당 등급은 존재하지 않습니다.");
+                grade = null;
+        }
+
+        if (grade == null) {
+            System.out.println("해당 등급은 존재하지 않습니다.");
+        } else {
+            System.out.println(grade);
         }
         input.close();
     }
