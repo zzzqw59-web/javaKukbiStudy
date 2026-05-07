@@ -5,9 +5,12 @@ public class DoWhileExample1 {
         char alphabet = 'a';
 
         do {
-            System.out.println(alphabet);
+            System.out.print(alphabet);
             alphabet++;
-        } while(alphabet < 123);
+            if (alphabet <= 'z') {
+                System.out.print(" ");
+            }
+        } while(alphabet <= 'z');
 
 
     }
