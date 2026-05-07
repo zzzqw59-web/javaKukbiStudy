@@ -18,7 +18,6 @@ public class BreakExample {
             System.out.println("0~100 사이의 값을 입력하시오. , 그 외를 입력하면 종료");
             int num = input.nextInt();
             if (num > 100 || num < 0) {
-                System.out.println("처음부터 다시 입력하세요.");
                 break;
             }
 
@@ -26,6 +25,11 @@ public class BreakExample {
             count++;
         }
         double average = (double) sum / count;
-        System.out.println("입력한 점수의 총점: " + sum + ", 평균: " + average);
+
+        if (count == 0) {
+            System.out.println("입력된 데이터가 없어 계산이 불가능합니다.");
+        } else {
+            System.out.println("입력한 점수의 총점: " + sum + ", 평균: " + average);
+        }
     }
 }
