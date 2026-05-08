@@ -21,7 +21,7 @@ public class RepetitiveExample {
 
             if (checkNumber == 5) {
                 System.out.println("종료합니다.");
-                break;
+                return;
             }
 
         } while(checkNumber > 5 || checkNumber < 0);
