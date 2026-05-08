@@ -12,12 +12,18 @@ public class ScoreTest {
         Scanner input = new Scanner(System.in);
         System.out.println("학생의 수를 입력하시오.");
         int students = input.nextInt();
-        int sum = 0;
+
 
         System.out.println("학생들의 수만큼 점수를 각각 입력하시오.");
         int[] scores = new int[students];
+        int sum = input.nextInt();
+
 
         for (int i = 0; i < scores.length; i++) {
+
+            sum += scores[i];
         }
+
+        System.out.println(sum);
     }
 }
