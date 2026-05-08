@@ -18,12 +18,6 @@ public class ScoreTest {
         int[] scores = new int[students];
 
         for (int i = 0; i < scores.length; i++) {
-            while (students != scores[i]) {
-                System.out.println("학생들의 수만큼 입력해야합니다.");
-                break;
-            }
-            sum += scores[i];
         }
-        System.out.println(sum);
     }
 }
