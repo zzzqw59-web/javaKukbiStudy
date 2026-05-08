@@ -40,6 +40,6 @@ public class SchoolCafeteriaExample {
 
         }
         System.out.println("만족도별 점수");
-//        System.out.println("불만족: " + count1 + ", 보통: " + count2 + ", 만족: " + count3);
+        System.out.println("불만족: " + count1 + ", 보통: " + count2 + ", 만족: " + count3);
     }
 }
