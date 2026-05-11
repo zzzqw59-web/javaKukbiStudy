@@ -25,8 +25,15 @@ public class ArrayExample6 {
         numbers[0] = num1;
         numbers[1] = num2;
 
-        for (int i = 2; i < numbers.length; i++) {
+        System.out.print(numbers[0] + ", ");
+        System.out.print(numbers[1] + ", ");
 
+        for (int i = 2; i < numbers.length; i++) {
+            numbers[i] = (numbers[i - 2] * numbers[i - 1]) % 10;
+            System.out.print(numbers[i]);
+            if (i < numbers.length - 1) {
+                System.out.print(", ");
+            }
         }
 
 
