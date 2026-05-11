@@ -27,6 +27,7 @@ public class ArrayExample5 {
             copy[i] = '*';
         }
 
+        System.out.println("주민등록번호 (-포함): " + jumin);
         System.out.println(copy);
 
     }
