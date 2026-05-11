@@ -21,15 +21,14 @@ public class ArrayExample4 {
 
         int middle = oddNumber / 2;
 
-        // 오름차순
         for (int i = 0; i <= middle; i++) {
             System.out.print((i + 1) + " ");
         }
 
-        // 내림차순
-        for (int i = middle - 1; i >= 0; i--) {
+        for (int i = middle; i >= 0; i--) {
             System.out.print((i + 1) + " ");
         }
+
 
 
     }

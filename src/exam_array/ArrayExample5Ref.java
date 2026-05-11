@@ -2,7 +2,7 @@ package exam_array;
 
 import java.util.Scanner;
 
-public class ArrayExample5 {
+public class ArrayExample5Ref {
     static void main(String[] args) {
         /*
         주민번호 성별자리 이후부터 *로 가려서 출력하시오
@@ -14,7 +14,7 @@ public class ArrayExample5 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("주민번호를 입력하십시오.");
+        System.out.print("주민번호를 입력하십시오: ");
         String jumin = input.nextLine();
 
         // 원본 배열
@@ -24,7 +24,7 @@ public class ArrayExample5 {
         char[] copy = origin.clone();
 
         for (int i = 8; i < copy.length; i++) {
-            copy[i] = '*';
+            copy[i] = '#';
         }
 
         System.out.println(copy);
