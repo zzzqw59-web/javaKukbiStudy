@@ -13,6 +13,11 @@ public class JudgeExample {
 
         for (int i = 0; i < values.length; i++) {
             values[i] = input.nextInt();
+
+            if (values[i] > 100 | values[i] < 0) {
+                System.out.println("점수가 올바르지 않습니다.");
+                return;
+            }
         }
 
         Arrays.sort(values);
