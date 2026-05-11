@@ -16,14 +16,16 @@ public class ScoreTest {
 
         System.out.println("학생들의 수만큼 점수를 각각 입력하시오.");
         int[] scores = new int[students];
-        int sum = input.nextInt();
+        int sum = 0;
 
 
         for (int i = 0; i < scores.length; i++) {
-
+            scores[i] = input.nextInt();
             sum += scores[i];
         }
 
-        System.out.println(sum);
+        double average = (double) sum / students;
+
+        System.out.printf("학생들의 평균 점수는 %.2f점입니다. \n", average);
     }
 }
